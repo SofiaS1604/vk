@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f6f9;
+}
+
+.form_login-image {
+    background-image: url("../images/clear-glass-ball-with-reflection-of-body-of-water-during-2409302.jpg");
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+    overflow: hidden;
+    background-position: center;
+}
+
+.form_login {
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: calc((100vh - 500px) / 2);
+    display: flex;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, .1);
+}
+
+.form_login-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background: white;
+}
+
+.form_login-title {
+    font-size: 21px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #666666;
+}
+
+.form_login-input, .account_friends-input{
+    font-size: 18px;
+    margin-top: 35px;
+    padding: 0 25px;
+    outline: none;
+    width: 300px;
+    color: #666666;
+    border: 1px solid #ccc;
+    height: 50px;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -ms-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+}
+
+.form_login-input:focus, .account_friends-input {
+    outline: none;
+    border-color: cornflowerblue;
+}
+
+.form_login-button {
+    width: 125px;
+    height: 45px;
+    background: cornflowerblue;
+    color: ghostwhite;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 25px;
+    transition: all .3s ease-out;
+    outline: none;
+}
+
+.form_login-button:hover {
+    background: #00ad5f;
+    transition: all .3s ease-out;
+}
+
+.main {
+    min-height: 100vh;
+    overflow: hidden;
+    background: #f6f6f9;
+    display: flex;
+}
+
+.main_panel {
+    width: 300px;
+    min-height: 100vh;
+    background: #f2f2f5;
+}
+
+.panel_navigation-list {
+    height: 50px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    color: #828283;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.main_account {
+    box-shadow: 0 7px 12px #cecece;
+    width: calc(100vw - 300px);
+    padding-bottom: 50px;
+}
+
+.main_panel-navigation {
+    margin-top: 50px;
+}
+
+.panel_navigation-list--news::before {
+    background-image: url("../images/icon_news.png");
+    content: '';
+    background-size: cover;
+    width: 20px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.panel_navigation-list--messages::before {
+    background-image: url("../images/icon_messages.png");
+    content: '';
+    background-size: cover;
+    width: 20px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.panel_navigation-list--friends::before {
+    background-image: url("../images/icon_friends.png");
+    content: '';
+    background-size: cover;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.panel_navigation-list--events::before {
+    background-image: url("../images/icon_events.png");
+    content: '';
+    background-size: cover;
+    width: 20px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.panel_navigation-list--communities::before {
+    background-image: url("../images/icon_communities.png");
+    content: '';
+    background-size: cover;
+    width: 27px;
+    height: 17px;
+    margin-right: 10px;
+}
+
+.panel_navigation-list--photos::before {
+    background-image: url("../images/icon_photos.png");
+    content: '';
+    background-size: cover;
+    width: 16px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.panel_navigation-list--account::before {
+    background-image: url("../images/icon_account.png");
+    content: '';
+    background-size: cover;
+    width: 22px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+.panel_navigation-list--logout::before {
+    background-image: url("../images/icon_logout.png");
+    content: '';
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.panel_navigation-list--active {
+    color: black;
+}
+
+.main_account-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border-bottom: 2px solid #e3e3e5;
+}
+
+.account_about-container {
+    display: flex;
+}
+
+.account_about-photo {
+    width: 175px;
+    height: 175px;
+    /*background: rgba(0, 0, 0, 0.1);*/
+    margin-left: 50px;
+    border-radius: 50%;
+    margin-right: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+.account_about-text {
+    max-width: 971px;
+    margin-top: 15px;
+    color: #8b8b8c;
+    min-height: 100px;
+    width: 600px;
+}
+
+.account_about-info {
+    margin-top: 15px;
+}
+
+.account_about-user {
+    font-size: 30px;
+    color: #454545;
+}
+
+.account_about-menu {
+    margin-top: 15px;
+}
+
+.account_menu-navigation ul {
+    display: flex;
+}
+
+.account_menu-list {
+    list-style: none;
+    color: #8b8b8c;
+    padding-bottom: 15px;
+    cursor: pointer;
+    border-bottom: 2px solid #f6f6f9;
+    transition: 0.1s all ease-in-out;
+}
+
+.account_menu-list--active {
+    border-bottom: 2px solid #5085E8;
+    color: #454545;
+    transition: 0.1s all ease-in-out;
+}
+
+.account_menu-list + .account_menu-list {
+    margin-left: 35px;
+}
+
+.account_information, .account_friends {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.account_information-block, .friend_block {
+    min-width: 274px;
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #EBEBEB;
+    box-shadow: 0 3px 0 rgba(211, 216, 224, 0.5);
+    padding: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.account_information-block + .account_information-block {
+    margin-left: 25px;
+}
+
+.account_information-text {
+    color: #5085E8;
+    font-size: 17px;
+}
+
+.account_information-title {
+    color: #454545;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.account_information, .account_friends, .account_photos {
+    display: flex;
+}
+
+.account_friends {
+    flex-direction: column;
+}
+
+.account_friends-buttons {
+    display: flex;
+    margin-left: 25px;
+    margin-top: 35px;
+}
+
+.account_friends-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+}
+
+.friend_block-online {
+    color: #5085E8;
+    margin-top: 10px;
+}
+
+.friend_block-photo {
+    width: 133px;
+    height: 133px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.friend_block-container {
+    margin-left: 30px;
+    font-size: 17px;
+    color: #454545;
+}
+
+.friend_block {
+    display: flex;
+    align-items: center;
+    width: 474px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.account_friends-button {
+    padding: 8px 15px;
+    color: #5085E8;
+    border-radius: 30px;
+    transition: 0.1s all ease-in-out;
+    cursor: pointer;
+}
+
+.account_friends-button--active {
+    background: #3C5A99;
+    color: #FFFFFF;
+    transition: 0.1s all ease-in-out;
+}
+
+.account_friends-input{
+    margin-top: 25px;
+    padding: 0 15px;
+    border: 1px solid #5085e8;
+    height: 40px;
+    margin-left: 25px;
+    width: 970px;
+    margin-right: 25px;
+}
+
+.account_photos {
+    margin: 20px;
+}
+
+.account_photos-block + .account_photos-block {
+    margin-top: 20px;
+}
+
+.account_photos-column + .account_photos-column {
+    margin-left: 20px;
+}
