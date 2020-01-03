@@ -271,7 +271,7 @@ body {
     flex-wrap: wrap;
 }
 
-.account_information-block, .friend_block {
+.account_information-block, .friend_block, .group_block {
     min-width: 274px;
     border-radius: 10px;
     background: white;
@@ -311,7 +311,7 @@ body {
     margin-top: 35px;
 }
 
-.account_friends-container {
+.account_friends-container, .account_group-container {
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
@@ -322,7 +322,7 @@ body {
     margin-top: 10px;
 }
 
-.friend_block-photo {
+.friend_block-photo, .group_block-photo {
     width: 133px;
     height: 133px;
     background-size: cover;
@@ -330,13 +330,13 @@ body {
     border-radius: 10px 0 0 10px;
 }
 
-.friend_block-container {
-    margin-left: 30px;
+.friend_block-container, .group_block-text {
+    margin: 0 30px;
     font-size: 17px;
     color: #454545;
 }
 
-.friend_block {
+.friend_block, .group_block {
     display: flex;
     align-items: center;
     width: 474px;
@@ -358,7 +358,7 @@ body {
     transition: 0.1s all ease-in-out;
 }
 
-.account_friends-input{
+.account_friends-input, .account_group-input{
     margin-top: 25px;
     padding: 0 15px;
     border: 1px solid #5085e8;

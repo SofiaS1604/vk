@@ -34,7 +34,7 @@ class accountFriends extends HTMLElement {
             }).then(() => {
                 //и добавляем в друзья к этому аккаунту
                 activeUser().friends = this.account_friends;
-                localStorage.setItem('users', JSON.stringify(users))
+                localStorage.setItem('users', JSON.stringify(users));
 
                 //запускаем функцию вывода
                 this.getFriends();
@@ -83,7 +83,6 @@ class accountFriends extends HTMLElement {
         $(`.account_friends-button--${type}`).classList.add('account_friends-button--active');
         //очищаем контайнер с друзьями
         $('.account_friends-container').innerHTML = '';
-        this.account_friends;
 
         if (type === 'all') {
             this.account_friends = activeUser().friends

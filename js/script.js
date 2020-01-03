@@ -12,8 +12,6 @@ if(localStorage.getItem('active_user')){
 }
 
 
-
-
 // запрос на получение списка друзей аккаунта
 async function getFriends() {
     let request = await fetch('./php/requests.php', {
