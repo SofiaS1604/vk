@@ -1,4 +1,3 @@
-// 08cbebcecfd5a43a133dfe026c6ecb301b8fc9f17402af9fe30b1926d7904a1a5b4556c71cd8cd4d25dc4
 let active_user;
 class formLogin extends HTMLElement {
     constructor() {
@@ -7,7 +6,7 @@ class formLogin extends HTMLElement {
             <div class="form_login-image"></div>
             <form class="form_login-block">
                 <div class="form_login-title">ACCOUNT LOGIN</div>
-                <input type="text" class="form_login-input" placeholder="Access token" value="08cbebcecfd5a43a133dfe026c6ecb301b8fc9f17402af9fe30b1926d7904a1a5b4556c71cd8cd4d25dc4"/>
+                <input type="text" class="form_login-input" placeholder="Access token"/>
                 <button class="form_login-button">SIGN IN</button>
             </form>`;
 
